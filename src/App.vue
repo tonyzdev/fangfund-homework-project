@@ -1,26 +1,58 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <div class="gradient-page-wrapper">
+      <Home/>
+      <GradientPage />
+      <BlackToWhitePage/>
+      <WhiteToBlackPage/>
+    </div>
+  </div>
 </template>
 
+
+<style>
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+#app {
+  overflow: hidden;
+}
+
+.gradient-page-wrapper {
+  position: absolute;
+  top: 0vh;
+  left: 0;
+  width: 100%;
+}
+</style>
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/HomePage.vue'
+import GradientPage from './components/GradientPage.vue'; 
+import BlackToWhitePage from './components/BlackToWhitePage.vue'
+import WhiteToBlackPage from './components/WhiteToBlackPage.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Home,
+    GradientPage,
+    BlackToWhitePage,
+    WhiteToBlackPage
 }
+}
+
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<!-- <style>
+
+</style> -->
+
