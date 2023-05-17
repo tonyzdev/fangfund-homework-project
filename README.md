@@ -1,4 +1,4 @@
-# my-project
+# fangfund-homework-project
 
 ## Usage
 
@@ -7,7 +7,7 @@ git clone `the github link of this project`
 ```
 
 ```
-cd my-project 
+cd fangfund-homework-project
 ```
 
 ### Project setup
