@@ -46,10 +46,15 @@
       <h1>Futher is here</h1>
       <h2>From machine learning to Artificial General Intelligence</h2>
     </div>
-  
+    <div id="trends-widget-container" ref="widgetContainer"></div>
     
   </div>
 </template>
+
+
+
+
+
 
 
 <script>

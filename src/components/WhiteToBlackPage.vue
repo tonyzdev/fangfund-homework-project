@@ -1,52 +1,3 @@
- <!-- <template>
-    <div class="background">
-      <div class="content">
-        <div class="row">
-          <div class="column">
-            <h1>
-              "Revolutionizing Image Creation:<br/>
-              How <span class="gradient-text">Midjourney</span>'s AI<br/>
-              Is Shaping the Future of Art"
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <p>
-              San Francisco-based Midjourney, Inc. is reshaping the intersection of artificial intelligence and visual art. Their generative AI program, Midjourney, uses natural language prompts to generate rich, detailed images, offering a new tool for artists and designers. Despite being in open beta since July 2022, the tool has undergone several iterations, with each version introducing more refined capabilities and higher image quality. However, this rapid innovation has not been without controversy. Questions around copyright infringement and the use of artist's images without explicit consent have cast a shadow over the tool's successes. As the conversation continues, Midjourney stands at the forefront of an exciting new chapter in digital art creation.
-            </p>
-          </div>
-          <div class="column">
-            <div class="image-container">
-              <img class="img1" src="https://cdn.discordapp.com/attachments/1107990517909819495/1107998833318838314/WX20230516-1951332x.png" alt="Image 1" loading="lazy">
-              <img class="img2" src="https://cdn.discordapp.com/attachments/1107990517909819495/1108002434300780707/pure_ASCII_art_90e4aed4-d8e8-465b-9da7-c5da4080f2f6.png" alt="Image 2" loading="lazy">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <h3>With Prompt: left-img-link ASCII art --aspect 7:4 --v 4 --v 4 --s 250</h3>
-            <img class="img3" src="https://cdn.discordapp.com/attachments/990816855088328734/1108260940153098250/Azim_in_cartoon_style_a4ebccee-7d1b-42a1-8db2-850c54f8f825.png" loading="lazy">
-          </div>
-          <div class="column">
-            <h3>With Prompt: https://s.mj.run/EAHzpi8fdOQ in cartoon style</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <div class="container">
-              <div class="input-container">
-                <input type="text" v-model="email" placeholder="Enter your e-mail to stay up-to-date with the latest AGI inquiries">
-                <button @click="submit">Subscribe</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </template>
- -->
-
  <template>
     <div class="background">
       <div class="content">
@@ -102,42 +53,32 @@
           </div>
           <button @mouseover="changeButtonColor(true)" @mouseleave="changeButtonColor(false)" @click="changeButtonColor(true)" :style="buttonStyles">Subscribe</button>
         </div>
+        
       </div>
     </div>
   </template>
   
 
-
-
 <script>
 export default {
   name: 'WhiteToBlackPage',
-//   data() {
-//     return {
-//       firstName: '',
-//       lastName: '',
-//       email: '',
-//       interests: '',
-//       interestsList: []
-//     };
-//   },
-data() {
-    return {
-      isButtonHovered: false,
-      isButtonClicked: false,
-    };
-  },
-
-  methods: {
-    changeButtonColor(isHovered) {
-      this.isButtonHovered = isHovered;
-      
-      // 如果按钮被点击，则保持颜色不变
-      if (this.isButtonClicked) {
-        this.isButtonClicked = isHovered;
-      }
+  data() {
+      return {
+        isButtonHovered: false,
+        isButtonClicked: false,
+      };
     },
-  },
+
+    methods: {
+      changeButtonColor(isHovered) {
+        this.isButtonHovered = isHovered;
+        
+        // 如果按钮被点击，则保持颜色不变
+        if (this.isButtonClicked) {
+          this.isButtonClicked = isHovered;
+        }
+      },
+    },
 
   computed: {
     buttonStyles() {
@@ -161,7 +102,7 @@ data() {
     left: 0; 
     background-image: linear-gradient(to bottom, white, #3e3d3d);
     /* 其他样式 */
-    height: 250vh;
+    height: 300vh;
     display: flex;
     justify-content: center;
     align-items: center;
