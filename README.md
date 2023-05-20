@@ -1,4 +1,4 @@
-# my-project
+# fangfund-homework-project
 
 ## UPDATE
 20 May, 20
