@@ -13,7 +13,9 @@
 % 设置中文字体为宋体
 % \setCJKmainfont{SimSun}
 % \setCJKmainfont{KaiTi}
-
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
 
 % 设置英文字体为New Times
 
@@ -32,6 +34,18 @@
 \begin{document}
 
 \maketitle
+
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=10cm]{michael-dziedzic-qDG7XKJLKbs-unsplash.jpg}
+    % \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
 \clearpage
 
   % \textsf{黑体\textbf{加粗}}
@@ -67,21 +81,14 @@
     \end{enumerate}
     \item 条件不变，资金变为1亿元人民币。
 \end{enumerate}
-% 2.1 假设有1000万资金，基于Step 1形成一个投资策略。
-% Notes:
-% 1. 二级市场投资占比<=20%, 标注理由。
-% 2. 一级市场股权投资或者孵化策略<=100%。
-% 3. 解释一级市场股权投资的细分赛道和下注方式。
-% 4. 如上策略不需要考虑实际操作难度和成本。
-% 2.2 条件不变，资金变为1亿元人民币。
+
 \textbf{Step 3 信息趣味}
 
 \begin{enumerate}
     \item  如果可以和Sam Altman等AGI领域的人交流，最想问的5个问题？
     \item 推荐最受益的信息源，包括最看好的VC、最欣赏的从业者，每个不超过5个。并阐释理由。
 \end{enumerate}
-% 3.1 如果可以和Sam Altman等AGI领域的人交流，最想问的5个问题？
-% 3.2 推荐最受益的信息源，包括最看好的VC、最欣赏的从业者，每个不超过5个。并阐释理由。
+
 \textbf{Step 4 信息推送}
 
 模拟一天的推送信息，格式和形式不限。
@@ -93,5 +100,6 @@
 \input{section_3}
 \newpage
 \input{section_4}
+
 
 \end{document}

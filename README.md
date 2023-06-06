@@ -1,6 +1,9 @@
 # fangfund-homework-project
 
 ## UPDATE
+7 JUN, 23
+更新了Assignment#2的第4节，并且对之前内容进行了一定的微调。
+
 3 JUN, 23
 更新了Assignment#2的1-3节，上传了pdf文件（chinese_report.pdf），以及tex代码（./chinses_report）。
 
